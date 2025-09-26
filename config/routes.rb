@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   #DirectorsController
   get("/directors", { :controller => "directors", :action => "index" })
   get("/directors/:path_id", { :controller => "directors", :action => "show" })
+
+  #ActorsController
+  get("/actors", { :controller => "actors", :action => "index" })
+  get("/actors/:path_id", { :controller => "actors", :action => "show" })
 end

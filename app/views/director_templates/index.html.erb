@@ -3,6 +3,8 @@
 <ul>
   <% @list_of_directors.each do |a_director| %>
     <li>
+      <img src="<%= a_director.image %>" width="100">
+      
       <a href="/directors/<%= a_director.id %>">
         <%= a_director.first_name %> <%= a_director.last_name %>
       </a>
