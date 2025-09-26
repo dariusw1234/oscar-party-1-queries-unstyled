@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   #DirectorsController
   get("/directors", { :controller => "directors", :action => "index" })
+  get("/directors/youngest", { :controller => "directors", :action => "youngest"})
+  get("/directors/eldest", { :controller => "directors", :action => "eldest"})
   get("/directors/:path_id", { :controller => "directors", :action => "show" })
 
   #ActorsController
